@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="style7.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body background="background3.jpg">
+<section class="header">
+<nav>
+
+<div class="nav-links">
+<ul>
+<b>
+<li><a href="loginorregister.html">LOGIN</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+<li><a href="website1.html">HOME</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+<li><a href="about.html">ABOUT</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+<li><a href="shopping.html">BOOKS</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+<li><a href="survey.html">SURVEY</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+<li><a href="contactus.html">CONTACT US</a></li>
+<li><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+</b>
+</ul>
+</div>
+</nav>
+	<h1><font color="#2B1700">Survey Form</font></h1>
+	<form id="survey-form" action="" method="post">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+		<br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+		<br>
+		<label for="age">Age:</label>
+		<input type="number" id="age" name="age" min="18" max="99" required>
+		<br>
+		<label for="gender">Gender:</label>
+		<select id="gender" name="gender">
+			<option value="">Choose an option</option>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="other">Other</option>
+		</select>
+		<br>
+		<label for="favorite-book">Favorite Book:</label>
+		<input type="text" id="favorite-book" name="favorite-book" required>
+		<br>
+		<label for="favorite-author">Favorite Author:</label>
+		<input type="text" id="favorite-author" name="favorite-author" required>
+		<br>
+		<label for="feedback">Feedback:</label>
+		<textarea id="feedback" name="feedback"></textarea>
+		<br>
+		<button type="submit" id="submit-button">Submit</button>
+	</form>
+	<script src="script.js"></script>
+</body>
+</html>

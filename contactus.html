@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style10.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body background="background10.jpg">
+<section class="header">
+<nav>
+<a href="website.html"><img src="newlogo.jpg" width="150" height="100" align="left"></a>
+<div class="nav-links">
+<ul>
+<b>
+<li><a href="loginorregister.html">LOGIN</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+<li><a href="website1.html">HOME</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+<li><a href="about.html">ABOUT</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+<li><a href="shopping.html">BOOKS</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+<li><a href="survey.html">SURVEY</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+<li><a href="contactus.html">CONTACT US</a></li>
+<li><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+</b>
+</ul>
+</div>
+</nav>
+  <div class="container">
+    <h1><font color="#3B270C">Contact Us</font></h1>
+    <form id="myForm" action="website1.html" method="POST">
+      <label for="name"><font color="#3B270C">Name:</font></label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email"><font color="#3B270C">Email:</font></label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message"><font color="#3B270C">Message:</font></label>
+      <textarea id="message" name="message" required></textarea>
+      
+    <button type="submit" onclick="submitFormAndRedirect("website1.html")">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
