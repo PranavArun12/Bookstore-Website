@@ -1,0 +1,70 @@
+/* Style the modal */
+.modal {
+  display: none; /* hide the modal by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Style the login form */
+.modal form {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+
+
+
+body {
+	font-family: Arial, sans-serif;
+	background-repeat: no-repeat;
+        background-size: cover;
+	margin: 0;
+	padding: 0;
+}
+
+.login-register-box {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin: 10% auto;
+	max-width: 400px;
+	padding: 20px;
+	text-align: center;
+}
+
+.login-register-box h2 {
+	color: #333;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.login-register-box p {
+	color: #666;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.login-register-box button {
+	background-color: #333;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 10px 20px;
+	margin: 10px;
+	transition: all 0.3s ease;
+}
+
+.login-register-box button:hover {
+	background-color: #555;
+}
