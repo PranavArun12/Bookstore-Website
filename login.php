@@ -4,6 +4,33 @@
 	<title>Login Page</title>
 
 	<link rel="stylesheet" type="text/css" href="style3.css">
+	 <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var usernameError = document.getElementById("username-error");
+            var passwordError = document.getElementById("password-error");
+
+            // Check if username is empty or doesn't contain an @ symbol
+            if (username === "" || username.indexOf("@") === -1) {
+                usernameError.innerHTML = "Please enter a valid email address";
+                return false;
+            } else {
+                usernameError.innerHTML = "";
+            }
+
+            // Check if password is empty or doesn't contain at least one number and one special character
+            if (password === "" || !/[0-9]/.test(password) || !/[^A-Za-z0-9]/.test(password)) {
+                passwordError.innerHTML = "Please enter a valid password (at least one number and one special character)";
+                return false;
+            } else {
+                passwordError.innerHTML = "";
+            }
+
+            // If both fields are valid, return true to submit the form
+            return true;
+        }
+    </script>
 
 </head>
 <body background="background11.jpg">
